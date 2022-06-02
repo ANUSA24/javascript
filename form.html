@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body onload="load()">
+	<center>
+	<h1>BUTTON</h1>
+	<form name="re">
+	First Number:<input type="text" id="t1"><br>
+	Second Number:<input type="text" id="t2"><br>
+	<input type="button" value="ADD" onClick="add(t1,t2)">
+	<p id="r"></p>
+	</center>
+	<script>
+		function add(a,b)
+		{
+			var a=parseInt(document.re.t1.value);//calling without id
+			var b=parseInt(document.re.t2.value);
+			var c=a+b;
+			document.getElementById("r").innerHTML="Sum is "+c;
+		}
+		function load()
+		{
+			var n=document.getElementById("t1").focus();
+			var a=alert("Hi").focus();
+			
+			//var n=document.getElementById("t2").focus();
+			return true;
+		}
+	</script>
+	</form>
+</body>
+</html>

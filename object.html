@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<script>
+	let student={
+	name:"Anusa",
+	age:21,//data property
+	 marks:{
+		CN:100,
+		ADBMS:100,
+		AI:98,
+		VC:100,
+	},//creating object inside another object
+		greet:function()//creating function inside object
+		{
+			document.write("Good Evening");
+		}
+	};//intizalizing object (key-value pair)
+	document.write(typeof(student));//object
+	document.write("<br>");
+	document.write(student.name);//acessing the name through dot operator
+	document.write("<br>");
+	document.write(student['age']);//acessing the name through []
+	document.write("<br>");
+	//document.write(student.marks);
+	//document.write("<br>");
+	document.write(student.marks.CN);
+	document.write("<br>");
+	student.greet();
+</script>
+</body>
+</html>

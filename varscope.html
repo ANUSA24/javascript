@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body>
+<script>
+	var a="hello";//global variable
+	function hello()
+	{
+		a="anusa";//changing global variable
+		//document.write(a);
+		let b=3;//local scope
+		document.write(a+b);
+	}
+	document.write(a);//before calling hello() fn
+	hello();
+	document.write(a);
+	document.write(a+b);//error
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+	<center>
+	<h1>BUTTON</h1>
+	First Number:<input type="text" id="t1"><br>
+	Second Number:<input type="text" id="t2"><br>
+	<input type="button" value="ADD" onClick="add(t1,t2)">
+	<p id="r"></p>
+	</center>
+	<script>
+		function add(a,b)
+		{
+			var a=parseInt(document.getElementById("t1").value);
+			var b=parseInt(document.getElementById("t2").value);
+			var c=a+b;
+			document.getElementById("r").innerHTML="Sum is "+c;
+		}
+	</script>
+</body>
+</html>

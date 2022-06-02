@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+<h1><center>FACTORIAL OF NUMBER</center></h1>
+<script>
+//RECURSION
+	var a;
+	function fact(a)
+	{
+		if(a==1)
+			return 1;
+		else
+			return a*fact(a-1);
+	}
+	var n=prompt("Enter the value to find Factorial")
+	document.write(`The factorial of ${n} is:`)
+	document.write(fact(n));
+</script>
+</body>
+</html>
